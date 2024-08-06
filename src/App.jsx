@@ -1,9 +1,14 @@
+import Header from "./components/Header";
+import HeaderContainer from "./containers/HeaderContainer";
+import PageContainer from "./containers/PageContainer";
+
 function App() {
   return (
     <div>
-      <div className="bg-green-400 text-white text-4xl py-4 text-center font-medium">
-        Hello World
-      </div>
+      <HeaderContainer>
+        <Header />
+      </HeaderContainer>
+      <PageContainer>{/* Dolduurulucak */}</PageContainer>
     </div>
   );
 }
