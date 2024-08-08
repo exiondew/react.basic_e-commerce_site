@@ -16,6 +16,18 @@
   animation: rotate 10s linear infinite;
 }
 
+.appearance-none {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.decoration-none {
+  text-decoration: none;
+}
+
+/* ANIMATION */
+
 @keyframes rotate {
   to {
     transform: rotate(0);
