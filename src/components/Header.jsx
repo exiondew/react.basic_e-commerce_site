@@ -35,7 +35,7 @@ function Header({ darkTheme, setDarkTheme }) {
             onClick={() => setShowSelectLanguage(!showSelectLanguage)}
           />
           {showSelectLanguage && (
-            <div className="absolute top-6 -right-1">
+            <div className="absolute top-6 -right-1 z-10">
               <LanguageSwitcher showFunc={setShowSelectLanguage} />
             </div>
           )}
