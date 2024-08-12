@@ -1,5 +1,6 @@
 {
-  "exion_store": "Exion's Store",
+  "exion_store": "Exion Store",
   "default_search": "Search Product...",
-  "gotodetails": "Go to Details"
+  "go_details": "Go to Details",
+  "add_cart": "Add to Cart"
 }

@@ -2,7 +2,7 @@ import { changeLanguage } from "i18next";
 import { string, func } from "prop-types";
 
 const LanguageSwitcher = ({ showFunc }) => {
-  const href = window.location.href;
+  const base = window.location.origin + "/react.basic_e-commerce_site";
 
   const clickHandle = (lang) => {
     showFunc(false);
@@ -15,7 +15,7 @@ const LanguageSwitcher = ({ showFunc }) => {
         className="select-none duration-300 list-none cursor-pointer flex flex-center w-full px-5 py-1 gap-3 bg-slate-500 hover:bg-slate-600 dark:bg-slate-700 dark:hover:bg-slate-400"
         onClick={() => clickHandle(lang)}
       >
-        <img className="h-5" src={href + icon} alt="Flag" />
+        <img className="h-5" src={base + icon} alt="Flag" />
         <span>{name}</span>
       </li>
     );

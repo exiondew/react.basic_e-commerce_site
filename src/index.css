@@ -30,6 +30,13 @@
   transition: background-color 0.3s;
 }
 
+.h-152 {
+  height: 38rem;
+}
+
+.product-detail-zone {
+  height: calc(100vh - 4rem);
+}
 /* ANIMATION */
 
 @keyframes rotate {

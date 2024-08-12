@@ -6,14 +6,19 @@ import { IoLanguage } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
 import PropTypes from "prop-types";
+import { useNavigate } from "react-router-dom";
 
 function Header({ darkTheme, setDarkTheme }) {
   const [showSelectLanguage, setShowSelectLanguage] = useState(false);
+  const navigate = useNavigate();
   const { t } = useTranslation();
 
   return (
-    <header className="px-3 h-16 flex items-center justify-between duration-300 bg-slate-400 dark:bg-slate-800">
-      <div className="flex flex-center gap-2 md:gap-4">
+    <header className="cursor-pointer px-3 h-16 flex items-center justify-between duration-300 bg-slate-400 dark:bg-slate-800">
+      <div
+        className="flex flex-center gap-2 md:gap-4"
+        onClick={() => navigate("/react.basic_e-commerce_site")}
+      >
         <img src={logo} alt="Logo" className="h-10 animation-rotate" />
         <span className="font-medium text-black dark:text-white">
           {t("exion_store")}

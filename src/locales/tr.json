@@ -1,5 +1,6 @@
 {
   "exion_store": "Exion Mağazası",
   "default_search": "Ürün Ara...",
-  "gotodetails": "Detaylara Git"
+  "go_details": "Detaylara Git",
+  "add_cart": "Sepete Ekle"
 }

@@ -34,7 +34,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen min-w-full flex flex-col duration-bg-300 bg-gray-100 dark:bg-slate-900 ">
+    <div className="min-h-screen min-w-full flex flex-col duration-bg-300 bg-gray-100 dark:bg-slate-900">
       <HeaderContainer>
         <Header setDarkTheme={setDarkTheme} darkTheme={darkTheme} />
       </HeaderContainer>
