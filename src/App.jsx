@@ -5,7 +5,9 @@ import HeaderContainer from "./containers/HeaderContainer";
 import { useState, useEffect } from "react";
 import { getInitialLanguage, changeLanguage } from "./utils/languageUtils";
 
-// import PageContainer from "./containers/PageContainer";
+import PageContainer from "./containers/PageContainer";
+import RouterConfig from "./config/RouterConfig";
+import Loading from "./components/Loading";
 
 function App() {
   const [darkTheme, setDarkTheme] = useState(() => {
@@ -32,11 +34,14 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="min-h-screen min-w-full flex flex-col duration-bg-300 bg-gray-100 dark:bg-slate-900 ">
       <HeaderContainer>
         <Header setDarkTheme={setDarkTheme} darkTheme={darkTheme} />
       </HeaderContainer>
-      {/* <PageContainer></PageContainer> */}
+      <PageContainer>
+        <RouterConfig />
+        <Loading />
+      </PageContainer>
     </div>
   );
 }

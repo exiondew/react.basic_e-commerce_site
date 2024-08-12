@@ -26,6 +26,10 @@
   text-decoration: none;
 }
 
+.duration-bg-300 {
+  transition: background-color 0.3s;
+}
+
 /* ANIMATION */
 
 @keyframes rotate {
