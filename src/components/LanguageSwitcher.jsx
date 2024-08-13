@@ -1,5 +1,5 @@
-import { changeLanguage } from "i18next";
 import { string, func } from "prop-types";
+import { changeLanguage } from "../utils/languageUtils";
 
 const LanguageSwitcher = ({ showFunc }) => {
   const base = window.location.origin + "/react.basic_e-commerce_site";

@@ -2,5 +2,7 @@
   "exion_store": "Exion Mağazası",
   "default_search": "Ürün Ara...",
   "go_details": "Detaylara Git",
-  "add_cart": "Sepete Ekle"
+  "add_cart": "Sepete Ekle",
+  "total": "Toplam",
+  "non_products": "Ürün Yok"
 }

@@ -1,12 +1,13 @@
 import { IoIosSunny } from "react-icons/io";
 import logo from "../images/logo.png";
-import { FaMoon, FaSearch, FaShoppingBasket } from "react-icons/fa";
+import { FaMoon, FaSearch } from "react-icons/fa";
 import { useState } from "react";
 import { IoLanguage } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
 import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
+import BasketIcon from "./BasketIcon";
 
 function Header({ darkTheme, setDarkTheme }) {
   const [showSelectLanguage, setShowSelectLanguage] = useState(false);
@@ -33,7 +34,7 @@ function Header({ darkTheme, setDarkTheme }) {
         <FaSearch className="absolute right-1.5 cursor-pointer text-white dark:text-black select-none" />
       </div>
       <div className="flex flex-center gap-4 text-white text-lg lg:gap-8">
-        <FaShoppingBasket className="text-slate-800 cursor-pointer hover:text-blue-500 dark:hover:text-sky-400 duration-200 dark:text-slate-200 select-none" />
+        <BasketIcon />
         <div className="flex flex-col flex-center relative">
           <IoLanguage
             className="text-slate-800 cursor-pointer hover:text-blue-500 dark:hover:text-sky-400 duration-200 dark:text-slate-200 select-none"

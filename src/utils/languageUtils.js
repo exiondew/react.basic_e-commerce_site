@@ -20,5 +20,7 @@ export const changeLanguage = (lng) => {
  * @returns {string} - Kaydedilmiş dil kodu ya da varsayılan olarak "en".
  */
 export const getInitialLanguage = () => {
-  return localStorage.getItem("language") || navigator?.language || "en";
+  return (
+    localStorage.getItem("lang") || navigator.language.split("-")[0] || "en"
+  );
 };
