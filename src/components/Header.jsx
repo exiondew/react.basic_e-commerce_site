@@ -1,6 +1,6 @@
 import { IoIosSunny } from "react-icons/io";
 import logo from "../images/logo.png";
-import { FaMoon, FaSearch } from "react-icons/fa";
+import { FaMoon } from "react-icons/fa";
 import { useState } from "react";
 import { IoLanguage } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
@@ -8,6 +8,7 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
 import BasketIcon from "./BasketIcon";
+import Search from "./Search";
 
 function Header({ darkTheme, setDarkTheme }) {
   const [showSelectLanguage, setShowSelectLanguage] = useState(false);
@@ -25,13 +26,8 @@ function Header({ darkTheme, setDarkTheme }) {
           {t("exion_store")}
         </span>
       </div>
-      <div className="flex flex-center relative w-1/3">
-        <input
-          className="text-white w-full h-8 py-1 px-2 rounded outline-none bg-slate-700 dark:bg-gray-300 dark:text-black"
-          type="text"
-          placeholder={t("default_search")}
-        />
-        <FaSearch className="absolute right-1.5 cursor-pointer text-white dark:text-black select-none" />
+      <div className="w-1/3 relative">
+        <Search />
       </div>
       <div className="flex flex-center gap-4 text-white text-lg lg:gap-8">
         <BasketIcon />
